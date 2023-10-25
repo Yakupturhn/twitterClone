@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
 import { mainMenu } from "~/utils/consts";
-import Button from "~/components/button";
 import More from "./more";
 import New from "./new";
 
@@ -10,7 +9,7 @@ export default function Menu() {
     <nav className="mt-0.5 mb-1">
       {mainMenu.map((menu, index) => (
         <>
-          <NavLink to={menu.path} className="py-1 block group">
+          <NavLink key={index} to={menu.path} className="py-1 block group">
             {({ isActive }) => (
               <div
                 className={classNames(

@@ -1,6 +1,7 @@
 import { Popover, Disclosure } from "@headlessui/react";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
+
 export default function More() {
   return (
     <Popover className="relative ">
@@ -43,7 +44,7 @@ export default function More() {
           <div className="pr-4 text-xl font-bold">Para kazanma</div>
         </button>
 
-        <div className="h-px bg-[color:var(--background-third)] my-0.5 w-[89%] mx-auto" />
+        <div className="h-px bg-white my-0.5 w-[89%] mx-auto" />
 
         <Disclosure>
           {({ open }) => (
